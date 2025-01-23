@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: 'The AWS CloudFormation template creates KMS encryption keys for Config and S3, an encrypted S3 bucket, and enables Config for the account'
+Description: 'This Template is to activate AWS Config Service and create athena table for config data'
 Parameters:
   EMAIL:
     Default: 'souheib.abdelhak.3@gmail.com'
