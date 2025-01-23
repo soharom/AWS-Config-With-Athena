@@ -15,7 +15,7 @@ aws cloudformation create-stack --stack-name ConfigWithAthena --template-body fi
 # Test
 
 To test the solution you can create new query in athena , for example :
-```bash
+```sql
 SELECT configurationItem.resourceType, configurationItem.resourceId as InstanceId
 FROM default.aws_config_configuration_snapshot
 CROSS JOIN UNNEST(configurationitems) AS t(configurationItem)
